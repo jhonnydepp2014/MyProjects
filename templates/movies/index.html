@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+{% block title %} Movie Maya {% endblock %}
+
+{% block content %}
+
+        <h1>Movie Maya.. only HD Movies</h1>
+        {% for movie in movielist %}
+        <strong><a href="{{movie.url}}">{{ movie.movieName }}</a></strong><br />
+        {% endfor %}        
+        
+
+{% endblock %}
